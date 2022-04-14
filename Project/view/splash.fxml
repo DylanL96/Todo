@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.controller.splashController">
+   <children>
+      <AnchorPane prefHeight="521.0" prefWidth="729.0" style="-fx-background-color: #14291a#14291a #14291a#14291a #14291a#14291a #14291a#14291a;" stylesheets="@../styles/otherStyle.css">
+         <children>
+            <ImageView fx:id="pizza" fitHeight="316.0" fitWidth="313.0" layoutX="60.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/pizza.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="460.0" layoutY="115.0" prefHeight="281.0" prefWidth="240.0" style="-fx-background-color: #46574b#46574b;">
+               <children>
+                  <Label alignment="CENTER" layoutX="27.0" layoutY="54.0" prefHeight="30.0" prefWidth="186.0" text="TO DO LIST" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="38.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="loginButtonSplash" layoutX="39.0" layoutY="127.0" mnemonicParsing="false" onAction="#onClick_login_button" prefHeight="30.0" prefWidth="160.0" text="Log in" />
+                  <Button fx:id="registerButton" layoutX="41.0" layoutY="179.0" mnemonicParsing="false" onAction="#onClick_register_button" prefHeight="30.0" prefWidth="160.0" text="Register" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

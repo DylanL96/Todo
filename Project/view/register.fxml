@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="726.0" stylesheets="@../styles/otherStyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.controller.registerController">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="-2.0" prefHeight="522.0" prefWidth="732.0" style="-fx-background-color: #14291a#14291a;">
+         <children>
+            <ImageView fx:id="pizza" fitHeight="61.0" fitWidth="77.0" layoutX="321.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/pizza.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="428.0" layoutY="129.0" prefHeight="281.0" prefWidth="240.0" style="-fx-background-color: #46574b#46574b;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="40.0" prefHeight="31.0" prefWidth="216.0" text="Create your Account" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameField" layoutX="27.0" layoutY="101.0" prefHeight="31.0" prefWidth="186.0" promptText="Username" />
+                  <Button fx:id="submitButtonRegister" layoutX="50.0" layoutY="213.0" mnemonicParsing="false" onAction="#onClick_Btn_Register" prefHeight="35.0" prefWidth="141.0" text="Register" />
+                  <PasswordField fx:id="passwordField" layoutX="27.0" layoutY="153.0" prefHeight="30.0" prefWidth="186.0" promptText="Password" />
+                  <Label fx:id="registerErrorMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="10.0" prefHeight="30.0" prefWidth="197.0" style="-fx-font-size: 20;" textAlignment="CENTER" textFill="RED" />
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="pizza" fitHeight="52.0" fitWidth="53.0" layoutX="215.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/pizza.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pizza" fitHeight="61.0" fitWidth="91.0" layoutX="21.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/pizza.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pizza" fitHeight="40.0" fitWidth="40.0" layoutX="51.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/pizza.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pizza" fitHeight="76.0" fitWidth="58.0" layoutX="322.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/pizza.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pizza" fitHeight="76.0" fitWidth="58.0" layoutX="146.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/pizza.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pizza" fitHeight="143.0" fitWidth="174.0" layoutX="133.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/pizza.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="registerBackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClick_Register_Back_Button" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+.label{
+  -fx-font: 20px "Avenir Book";
+}
+
+.button{
+  -fx-background-color: transparent;
+  -fx-text-fill : #e7e5e5;
+  -fx-border-color: #ACACAC;
+  -fx-border-radius: 50px;
+  -fx-font: 15px "Avenir Book";
+}
+
+.button:hover{
+  -fx-background-color : #868686;
+}
+
+/* Login page */
+
+#close:hover{
+  -fx-background-color : #868686;
+}
+
+#errorMessage{
+  -fx-font: 15px "Avenir Book";
+}
+
+#close{
+  -fx-background-color: transparent;
+  -fx-text-fill : white;
+  -fx-border-color: #ACACAC;
+  -fx-border-radius: 50px;
+  -fx-font: 15px "Avenir Book";
+}
+
+#loginButton{
+  -fx-background-color: transparent;
+  -fx-text-fill : white;
+  -fx-border-color: #ACACAC;
+  -fx-border-radius: 50px;
+  -fx-font: 15px "Avenir Book";
+}
+
+#loginButton:hover{
+  -fx-background-color : #868686;
+}
+
+/* Register page */
+
+#submitButtonRegister{
+  -fx-background-color: transparent;
+  -fx-text-fill : white;
+  -fx-border-color: #ACACAC;
+  -fx-border-radius: 50px;
+  -fx-font: 15px "Avenir Book";
+}
+
+#submitButtonRegister:hover{
+  -fx-background-color : #868686;
+}
+
+#registerBackButton{
+  -fx-text-fill : white;
+}

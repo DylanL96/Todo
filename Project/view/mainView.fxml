@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="textArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="825.0" stylesheets="@../styles/mainView.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.controller.mainViewController">
+   <children>
+      <TableView fx:id="table" layoutX="213.0" layoutY="53.0" prefHeight="376.0" prefWidth="591.0" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="213.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="53.0">
+        <columns>
+          <TableColumn fx:id="taskColumn" minWidth="0.0" onEditCommit="#changeTaskCellEvent" prefWidth="93.94937133789062" text="Task" />
+            <TableColumn fx:id="descriptionColumn" onEditCommit="#changeDescriptionCellEvent" prefWidth="219.49734497070312" text="Description" />
+            <TableColumn fx:id="deadlineColumn" maxWidth="500.0" prefWidth="126.00262451171875" text="Deadline" />
+            <TableColumn fx:id="statusColumn" maxWidth="500.0" prefWidth="178.97149658203125" text="Status" />
+        </columns>
+      </TableView>
+      <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="313.0" layoutY="10.0" prefHeight="33.0" prefWidth="313.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox prefHeight="517.0" prefWidth="209.0" style="-fx-background-color: #14291a#14291a #14291a#14291a #14291a#14291a #14291a#14291a #14291a#14291a #14291a#14291a #14291a#14291a #14291a#14291a;">
+         <children>
+            <AnchorPane prefHeight="100.0" prefWidth="202.0">
+               <children>
+                  <Label fx:id="quoteArea" layoutX="7.0" layoutY="6.0" prefHeight="111.0" prefWidth="196.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="270.0" prefWidth="214.0">
+               <VBox.margin>
+                  <Insets bottom="80.0" />
+               </VBox.margin></AnchorPane>
+            <AnchorPane prefHeight="94.0" prefWidth="191.0">
+               <children>
+                  <Label layoutX="17.0" layoutY="9.0" prefHeight="23.0" prefWidth="106.0" text="Total Added" textFill="WHITE" />
+                  <Label id="countLabel" fx:id="countLabel" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="149.0" layoutY="9.0" prefHeight="23.0" prefWidth="35.0" textAlignment="RIGHT" textFill="WHITE" />
+                  <AnchorPane layoutY="40.0" prefHeight="43.0" prefWidth="163.0">
+                     <children>
+                        <Label layoutX="17.0" layoutY="10.0" prefHeight="23.0" prefWidth="121.0" text="Total Completed" textFill="WHITE" />
+                        <Label id="countLabel" fx:id="countLabel1" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="138.0" layoutY="10.0" prefHeight="23.0" prefWidth="46.0" textAlignment="RIGHT" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Button fx:id="backButton" layoutX="739.0" layoutY="9.0" mnemonicParsing="false" onAction="#backAction" prefHeight="34.0" prefWidth="83.0" text="Log out">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="209.0" layoutY="474.0" prefHeight="43.0" prefWidth="616.0" style="-fx-background-color: #f0f0f0#f0f0f0;">
+         <children>
+            <TextField fx:id="descriptionInput" layoutX="13.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="33.0" prefWidth="403.0" promptText="Description">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <Button fx:id="addButton" layoutX="427.0" layoutY="6.0" mnemonicParsing="false" onAction="#addData" prefHeight="25.0" prefWidth="84.0" text="Add" textFill="#001068" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="deleteButton" layoutX="651.0" layoutY="11.0" mnemonicParsing="false" onAction="#deleteData" prefHeight="33.0" prefWidth="83.0" text="Delete" textFill="#b20000" />
+      <DatePicker fx:id="deadlineInput" layoutX="382.0" layoutY="442.0" prefHeight="33.0" prefWidth="196.0" promptText="Deadline">
+         <effect>
+            <Glow />
+         </effect>
+      </DatePicker>
+      <ComboBox fx:id="comboBoxInput" layoutX="586.0" layoutY="441.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="129.0" promptText="Select" />
+      <TextField fx:id="taskInput" layoutX="224.0" layoutY="442.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="33.0" prefWidth="151.0" promptText="Task">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label fx:id="banner" layoutX="219.0" layoutY="15.0" prefHeight="25.0" prefWidth="114.0" text="TODO LIST" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

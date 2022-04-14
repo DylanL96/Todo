@@ -1,0 +1,175 @@
+#quoteArea{
+  -fx-font: 13px "Avenir Book";
+}
+
+*{
+  -fx-font: 14px "Avenir Book";
+}
+
+#banner{
+  -fx-font-size: 20;
+  -fx-text-fill : #02030A;
+}
+
+.button{
+  -fx-background-color: transparent;
+  -fx-text-fill : #02030A;
+  -fx-border-color: #ACACAC;
+  -fx-border-radius: 50px;
+}
+
+.button:hover{
+  -fx-background-color : #c6c8db;
+}
+
+.button:pressed{
+  -fx-background-color : #1620A1;
+}
+
+.combo-box{
+  -fx-border-width: 0.5px;
+  -fx-border-color: #ACACAC;
+  -fx-border-radius: 50px;
+  -fx-background-radius: 50px;
+  -fx-padding: 0px;
+  -fx-font-weight: 700;
+  -fx-background-color: white;
+  -fx-text-fill : #e7e5e5;
+}
+
+.combo-box-popup .list-view {
+  -fx-text-fill : #e7e5e5;
+}
+
+.combo-box .list-cell {
+  -fx-background: white;
+  -fx-background-color: transparent;
+  -fx-text-fill: #e7e5e5;
+}
+
+.combo-box .cell {
+  -fx-text-fill: #02030A;
+}
+
+.date-picker {
+  -fx-background-radius: 10 10 10 10;
+}
+.date-picker > .text-field {
+  -fx-background-radius: 10 0 0 10;
+}
+
+.date-picker > .arrow-button {
+  -fx-background-radius: 0 10 10 0;
+}
+
+
+.scroll-pane {
+  -fx-background-color:#14291a;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+  -fx-background-color:transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+  -fx-background-color:  #14291a;
+  -fx-background-radius: 5em;
+}
+
+.table-view{
+  -fx-background-color: white;
+  /* -fx-font-size: 20px; */
+  -fx-border-color: black;
+}
+
+.table-row-cell {
+  -fx-cell-size: 40px;
+  /* -fx-border-style:solid inside;
+  -fx-border-width:2; */
+}
+.table-view .column-header-background{
+  -fx-background-color: white;
+}
+
+.table-view .column-header {
+  -fx-background-color: transparent;
+}
+.table-view .table-cell{
+  -fx-text-fill: black;
+  -fx-alignment:center;
+  -fx-border-style:solid inside;
+  -fx-border-width:1;
+}
+
+.table-row-cell{
+  -fx-table-cell-border-color: transparent;
+  -fx-border-color: transparent;
+}
+
+.table-row-cell:empty{
+  -fx-background-color:white;
+  -fx-border-color: transparent;
+  -fx-table-cell-border-color: transparent;
+}
+
+.table-row-cell .button{
+  -fx-text-fill: black;
+}
+
+.table-row-cell .button:hover{
+  -fx-background-color:pink;
+}
+
+.table-column{
+  -fx-alignment: CENTER;
+}
+
+.table-row-cell:selected {
+  -fx-text-fill: white;
+  -fx-background-insets: 0;
+}
+
+.table-row-cell:selected .button {
+  -fx-text-fill: white;
+  -fx-background-insets: 0;
+}
+
+.table-row-cell:pressed .button {
+  -fx-text-fill: white;
+  -fx-background-insets: 0;
+}
+
+.table-row-cell:selected .table-cell{
+  -fx-text-fill: white;
+}
+
+.text-field {
+  -fx-background-insets: 0, 0 0 1 0 ;
+  -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+  -fx-prompt-text-fill: #02030A;
+}
+
+.table-row-cell:hover{
+   -fx-background-color:rgb(242, 234, 234);
+}
+
+#quoteArea{
+  -fx-control-inner-background: #000133;
+  -fx-font: 15px "Avenir Book";
+  -fx-text-alignment: left;
+  -fx-text-fill: white;
+}
+
+#registerErrorMessage{
+  -fx-font: 5px "Avenir Book";
+  -fx-text-alignment: center;
+}
